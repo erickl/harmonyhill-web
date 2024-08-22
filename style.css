@@ -1,0 +1,229 @@
+body {
+    font-family: Quattrocento, sans-serif;
+    /* Set the default font */
+
+
+
+    line-height: 1.6;
+    font-size: 16px;
+    font-weight: 400;
+    color: #284650;
+    background-color: #E8E0D0;
+
+
+}
+
+section,
+footer {
+    background-color: #E8E0D0;
+}
+
+h2,
+p {
+    padding: 10px 0;
+    margin: 0;
+}
+
+
+
+h2 {
+    font-size: 4em;
+    font-weight: normal;
+    /* margin: 0; */
+}
+
+img {
+    max-width: 100%;
+}
+
+.col-md-6 {
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+video::-webkit-controls-panel,
+video::-moz-controls-panel,
+video:-ms-controls-panel {
+    display: none;
+}
+
+
+
+.hero-video {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: normal;
+
+    color: white;
+
+
+}
+
+.hero-video::after {
+    /* Adjust video opacity by overlaying a black box (0 for transparent, 1 for solid black) */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+.hero-video video {
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+
+    object-fit: cover;
+}
+
+
+
+
+.logo-container {
+
+    margin: 0;
+
+    z-index: 1;
+    /*bring text forward over video*/
+    text-align: center;
+
+
+}
+
+.hotel-slogan {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.main-nav {
+    /* start in second half of page */
+    grid-row: 1;
+    grid-column-start: 2;
+    /* position on the top part of the video */
+    align-self: start;
+    /* Position over video and content */
+    z-index: 1;
+
+    padding: 1rem 2rem;
+
+    font-size: 1.2rem;
+}
+
+.main-nav ul {
+    list-style: none;
+    /* Remove default bullet points */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    /* display: grid;
+    grid-template-columns: repeat(5, minmax(0, 2fr)); */
+    justify-content: space-between;
+}
+
+.main-nav li {
+
+    /* Display list items inline (horizontally)*/
+    display: inline;
+}
+
+.main-nav li a {
+    /* White text color */
+    text-decoration: none;
+    color: inherit;
+    /* Remove underline & purple color from links */
+    font-weight: bold;
+    /* Bold text */
+    padding: 0.5rem 1rem;
+    /* Add some padding to links */
+
+}
+
+.custom-rounded-img {
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+
+.margin-on {
+    padding: 0 20px;
+}
+
+#about-us {
+    padding: 0 25%;
+}
+
+#about-us p {
+    padding: 0;
+}
+
+#stay-in {
+    padding-bottom: 20px;
+}
+
+#explore {
+    position: relative;
+    /* So the overlay semi transparent box gets correctly positioned */
+    background-image: url('assets/ricefield1.jpg');
+    /* Replace with your image path */
+    background-size: cover;
+    /* Ensures the image covers the entire section */
+    background-position: center;
+    /* Centers the image */
+    background-attachment: fixed;
+    /* Keep the image fixed while scrolling */
+    color: white;
+    /* Optional: Changes text color for contrast */
+    padding: 50px 20px;
+    /* Adjusts padding */
+    text-align: center;
+    /* Centers text */
+}
+
+#explore::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Semi-transparent black overlay */
+    z-index: 1;
+    /* Ensure the overlay is on top */
+}
+
+
+#explore h2,
+#explore p,
+#explore .explore-container,
+#explore .carousel {
+    position: relative;
+    /* Ensure the content is positioned relative to the section */
+    z-index: 2;
+    /* Ensure the content is above the overlay */
+}
+
+.explore-container p {
+    padding: 10px 20px;
+}
