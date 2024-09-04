@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelukkige verjaardag!</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Baloo+2:wght@400;700&family=Comic+Neue:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bday.css">
+</head>
+
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="display-3 title">🎉 Happy Birthday, liefste zussie! 🎉</h1>
+        <p class="lead sub-title">Ik wens je een fantastisch mooi jaar vol katjes, spelletjes, gebakjes en Jeroentjes!
+        </p>
+        <p class="sub-subtitle">Of ja misschien is 1 Jeroentje wel genoeg ;)</p>
+
+        <div class="row my-5 align-items-center content-row">
+            <div class="col-md-6 order-md-2">
+                <img src="assets/bday-1.jpg" alt="Image 1" class="img-fluid shadow-sm">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <div class="text-container">
+                    <h2 class="text-primary">You're Amazing!</h2>
+                    <p class="text-secondary">maar oh zo moeilijk te fotograferen! Kijk eens hoe ver ik terug moest gaan
+                        om iets te vinden van ons twee.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-5 align-items-center content-row">
+            <div class="col-md-6">
+                <img src="assets/bday-2.jpg" alt="Image 2" class="img-fluid shadow-sm">
+            </div>
+            <div class="col-md-6">
+                <div class="text-container">
+                    <h2 class="text-danger">Wishing you lots of love!</h2>
+                    <p class="second-text">van mij en van alle andere mensen die er altijd bijstaan op onze foto's ^^!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-5 align-items-center content-row">
+            <div class="col-md-6 order-md-2">
+                <img src="assets/bday-3.jpeg" alt="Image 3" class="img-fluid shadow-sm">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <div class="text-container">
+                    <h2 class="text-success">Cheers to You!</h2>
+                    <p class="text-info">Het ligt natuurlijk aan "ons Eline" die naar de andere kant van de wereld moest
+                        verhuizen :') Laten we in januari wat quality time inhalen &hearts;!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 text-center">
+        <h2 class="display-4 gift-title">Kies hier jouw cadeau uit!</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <form action="https://formspree.io/f/your-form-id" method="POST">
+                    <div class="form-group my-4">
+                        <label for="date" class="form-label">Pick a date!</label>
+                        <input type="date" class="form-control" id="date" name="date" required min="2024-12-31"
+                            max="2025-01-12">
+                    </div>
+
+                    <div class="form-group my-4">
+                        <label for="activity" class="form-label">Choose your activity</label>
+                        <div class=" text-start">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="activity" id="cinemaatje"
+                                    value="Cinemaatje" required>
+                                <label class="form-check-label" for="cinemaatje">
+                                    Cinemaatje
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="activity" id="shopping"
+                                    value="Gezellig winkelen (aankopen niet inbegrepen xD)" required>
+                                <label class="form-check-label" for="shopping">
+                                    Gezellig winkelen (aankopen niet inbegrepen xD)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="activity" id="museum"
+                                    value="Museum bezoekje (je bent immers bijna 30...)" required>
+                                <label class="form-check-label" for="museum">
+                                    Museum bezoekje (je bent immers bijna 30...)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="activity" id="winterwalk"
+                                    value="Winterwandeling in de Bourgoyen" required>
+                                <label class="form-check-label" for="winterwalk">
+                                    Winterwandeling in de Bourgoyen
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="activity" id="games"
+                                    value="Spelletjes spelen bij Micheline" required>
+                                <label class="form-check-label" for="games">
+                                    Spelletjes spelen bij Micheline
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group my-4">
+                        <label for="snackies" class="form-label">Choose your snackies</label>
+                        <div class=" text-start">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="snackies" id="plantbased"
+                                    value="Go all the WAY Plantbased Bakehouse" required>
+                                <label class="form-check-label" for="plantbased">
+                                    Go all the WAY Plantbased Bakehouse
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="snackies" id="madambakster"
+                                    value="Baksels van Madam Bakster" required>
+                                <label class="form-check-label" for="madambakster">
+                                    Baksels van Madam Bakster
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="snackies" id="painquotidien"
+                                    value="Une Tarte Quotidien au Pain Quotidien" required>
+                                <label class="form-check-label" for="painquotidien">
+                                    Une Tarte Quotidien au Pain Quotidien
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group my-4">
+                        <label for="dinner" class="form-label">Choose your delectable dinner spot</label>
+                        <div class=" text-start">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="dinner" id="knolandkool"
+                                    value="knol & kool" required>
+                                <label class="form-check-label" for="knolandkool">
+                                    knol & kool
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="dinner" id="lokaal" value="Lokaal"
+                                    required>
+                                <label class="form-check-label" for="lokaal">
+                                    Lokaal
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="dinner" id="karoot" value="Karoot"
+                                    required>
+                                <label class="form-check-label" for="karoot">
+                                    Karoot
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="dinner" id="soulkitchen"
+                                    value="Soul Kitchen" required>
+                                <label class="form-check-label" for="soulkitchen">
+                                    Soul Kitchen
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="dinner" id="plantapizza"
+                                    value="Plant A Pizza" required>
+                                <label class="form-check-label" for="plantapizza">
+                                    Plant A Pizza
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary btn-lg mt-4">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

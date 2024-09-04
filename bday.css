@@ -1,0 +1,143 @@
+body {
+    background-color: #ffefd5;
+    background-image: url('assets/background-repeat.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    font-family: 'Comic Neue', 'Arial', sans-serif;
+    color: #333;
+}
+
+.title {
+    font-family: 'Bangers', cursive;
+    font-size: 5rem;
+    color: #ff69b4;
+    text-shadow: 3px 3px #ffdab9;
+    margin-bottom: 20px;
+}
+
+.sub-title {
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.5rem;
+    color: #ffaa00;
+    margin-bottom: 20px;
+    background-color: rgba(255, 238, 200, .9);
+}
+
+.sub-subtitle {
+    font-size: 1rem;
+    font-family: 'Baloo 2', cursive;
+    color: black;
+}
+
+.content-row {
+    margin-bottom: 60px;
+}
+
+.text-container {
+    background-color: #ffe4e1;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+p {
+    font-family: 'Comic Neue', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.img-fluid {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 20%;
+}
+
+.second-text {
+    color: orange;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@media (max-width: 767px) {
+    .content-row {
+        text-align: center;
+    }
+
+    .img-fluid {
+        margin-bottom: 20px;
+    }
+}
+
+.gift-title {
+    font-family: 'Bangers', cursive;
+    font-size: 2.5rem;
+    color: #ff6347;
+    /* Tomato color */
+    margin-bottom: 30px;
+    background-color: rgba(255, 238, 200, .9);
+
+}
+
+.form-label {
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #ff4500;
+    background-color: rgba(255, 238, 200, .9);
+    vertical-align: middle;
+
+
+}
+
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+form div div {
+    color: #1a96a1;
+    background-color: rgba(255, 238, 200, .3);
+    font-weight: 800;
+}
+
+
+.form-check {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    font-family: 'Comic Neue', sans-serif;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.btn {
+    background-color: #ff4500;
+    border-color: #ff4500;
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.25rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.btn:hover {
+    background-color: #ff6347;
+    /* Lighter tomato color */
+    border-color: #ff6347;
+}
