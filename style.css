@@ -5,7 +5,7 @@ body {
 
 
     line-height: 1.6;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     color: #284650;
     background-color: #E8E0D0;
@@ -36,6 +36,15 @@ img {
     max-width: 100%;
 }
 
+.green-link {
+
+    color: rgb(43, 87, 63);
+    font-weight: 800;
+    text-decoration: none;
+
+}
+
+
 .col-md-6 {
     padding: 0;
 }
@@ -43,6 +52,28 @@ img {
 .row {
     margin: 0;
 }
+
+.sticky-banner {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(17, 72, 47, 0.9);
+    text-align: center;
+    font-size: 1em;
+    z-index: 1000;
+}
+
+.sticky-banner a {
+    color: white;
+    /* Bright orange for the link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sticky-banner a:hover {
+    text-decoration: underline;
+}
+
 
 video::-webkit-controls-panel,
 video::-moz-controls-panel,
@@ -169,13 +200,13 @@ video:-ms-controls-panel {
     padding: 0 20px;
 }
 
-#about-us {
+/* #about-us {
     padding: 30px 25%;
 }
 
 #about-us p {
     padding: 0;
-}
+} */
 
 #natures-kitchen {
     padding-top: 20px;
@@ -185,7 +216,7 @@ video:-ms-controls-panel {
     padding-bottom: 20px;
 }
 
-.three-panel {
+.fixed-bg {
     position: relative;
     /* So the overlay semi transparent box gets correctly positioned */
 
@@ -199,13 +230,12 @@ video:-ms-controls-panel {
     /* Changes text color for contrast */
     padding: 50px 20px;
     /* Adjusts padding */
-    text-align: center;
-    /* Centers text */
+
 
 
 }
 
-.three-panel::before {
+.fixed-bg::before {
     content: '';
     position: absolute;
     top: 0;
@@ -219,17 +249,17 @@ video:-ms-controls-panel {
 }
 
 
-.three-panel h2,
-.three-panel p,
-.three-panel .three-panel-container,
-.three-panel .carousel {
+.fixed-bg h2,
+.fixed-bg p,
+.fixed-bg .three-panel-container,
+.fixed-bg .carousel {
     position: relative;
     /* Ensure the content is positioned relative to the section */
     z-index: 2;
     /* Ensure the content is above the overlay */
 }
 
-.three-panel-container img {
+.three-panel img {
     width: 100%;
     height: 350px;
     /* Set a fixed height */
@@ -241,12 +271,178 @@ video:-ms-controls-panel {
 
 
 #the-villa {
+    text-align: center;
     background-image: url('assets/pool-empty.jpg');
 
 }
 
 #explore {
+    text-align: center;
     background-image: url('assets/ricefield1.jpg');
+}
+
+#rates,
+#goodtoknow {
+    text-align: center;
+    /* background-color: rgb(1, 49, 39); */
+    color: rgb(1, 49, 39);
+}
+
+
+
+@media(min-width:992px) {
+    .heart-image-container {
+        position: relative;
+        /* Makes the container relative to position its children */
+        height: 500px;
+    }
+
+    .heart-image-container img {
+        position: absolute;
+        /* Position the images absolutely */
+        left: 0;
+        width: 80%;
+        /* Ensures both images are responsive */
+    }
+
+    .heart-image-container img:first-child {
+        z-index: 1;
+        left: 20%;
+        /* Ensures the first image is below the second */
+    }
+
+    .heart-image-container img:last-child {
+        top: 35%;
+        /* Move the second image downwards by 50% */
+        z-index: 2;
+        /* Ensures the second image is above the first */
+    }
+}
+
+@media(max-width:992px) {
+    .heart-image-container {
+        position: relative;
+        /* Makes the container relative to position its children */
+        margin-bottom: 50%;
+    }
+
+    .heart-image-container img {
+        position: absolute;
+        /* Position the images absolutely */
+        left: 0;
+        width: 50%;
+        /* Ensures both images are responsive */
+    }
+
+    .heart-image-container img:first-child {
+        z-index: 1;
+        left: 10%;
+        /* Ensures the first image is below the second */
+    }
+
+    .heart-image-container img:last-child {
+        top: 40%;
+        left: 40%;
+        /* Move the second image downwards by 50% */
+        z-index: 2;
+        /* Ensures the second image is above the first */
+    }
+}
+
+#goodtoknow-points {
+    align-content: center;
+    text-align: left;
+}
+
+.leaf-bullets {
+    padding: 0;
+    list-style: none;
+}
+
+.leaf-bullets li {
+    margin-bottom: 10px;
+    /* Optional: Add space between items */
+
+    position: relative;
+    padding-left: 50px;
+    /* Add space for the leaf icon */
+    /* Aligns the first line of text with the icon */
+}
+
+.leaf-bullets li i {
+    color: rgb(43, 87, 63);
+    /* Customize the color of the leaf icon */
+    margin-right: 10px;
+    /* Add space between the icon and text */
+    font-size: 25px;
+    /* Adjust the size of the icon */
+    vertical-align: middle;
+    /* Align the icon vertically with the text */
+
+
+    position: absolute;
+    left: 0;
+    top: 0.1em;
+    /* Adjusts the icon position vertically */
+}
+
+.leaf-bullets li li {
+    margin-left: 25px;
+    /* round bullet point move right */
+    padding-left: 10px;
+    /* distance between round bullet and text */
+    padding-top: 0px;
+}
+
+#leaf-divider {
+
+    background-color: #E8E0D0;
+    /* White background */
+
+    padding: 40px 0;
+
+}
+
+#leaf-divider img {
+
+
+    max-height: 100px;
+    /* Set max height to 20px */
+    width: 50%;
+    /* Maintain the aspect ratio */
+    display: block;
+    /* Ensures the image takes up only as much space as needed */
+    margin: 0 auto;
+    /* Center the image horizontally */
+    /* Optional: Adds some padding if needed */
+
+}
+
+#inclusions {
+    text-align: left;
+    display: inline-block;
+}
+
+#contact-us {
+    text-align: center;
+    background-color: rgb(1, 49, 39);
+    color: white;
+}
+
+#contact-us a {
+    color: white;
+}
+
+.social-med-icons {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    vertical-align: middle;
+
+}
+
+#insta {
+    font-size: 2.5rem;
 }
 
 /* .explore-container p {

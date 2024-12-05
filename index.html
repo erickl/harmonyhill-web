@@ -22,15 +22,30 @@
         href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
     <!-- website icon -->
     <link rel="icon" href="assets/logo-leaves-colored.png" sizes="292x292">
+
+    <!-- pinterest verification -->
+    <meta name="p:domain_verify" content="eb5d82ce9bc47762837dd0fe8b9c8b34" />
 </head>
 
 </head>
 
 <body>
+
+    <div class="sticky-banner">
+        <p>
+
+            <a href="#rates">We are getting ready for a soft opening in late October. Click
+                here for our super
+                early bird rates - we can't wait to welcome you!
+                &hearts; </a>
+        </p>
+    </div>
+
 
     <!-- <header>
         <nav class="main-nav">
@@ -57,27 +72,32 @@
         </div>
     </div>
 
-    <section id="about-us">
-        <h2>A place to reconnect</h2>
-        <p>...with the wonders of nature</p>
-        <p>...with the food that nourishes your body</p>
-        <p>...with the beautiful Balinese people and their cultural heritage</p>
-        <p>...with yourself</p>
-        <br>
-        <p>Harmony Hill is a luxurious villa tucked away in a traditional village in the heart of Bali. Perched upon a
-            ridge, overlooking a gorgeous valley and luscious rice fields, we are a scenic 30 minute drive away from
-            both the bustling town of Ubud in the South and the jawdropping volcanic landscapes of Mount Batur in the
-            North.
-        </p>
-        <br>
-        <p>
-            Our aim is to offer you a unique opportunity to find sanctuary in nature, while enjoying the comfort of our
-            beautiful villa and the thoughtful service of our team.
-        </p>
+    <section id="about-us" class="margin-on">
+        <div class="row align-items-center">
+            <h2>A place to reconnect</h2>
+            <p>...with the wonders of nature</p>
+            <p>...with the food that nourishes your body</p>
+            <p>...with the beautiful Balinese people and their cultural heritage</p>
+            <p>...with yourself</p>
+            <br>
+            <p>Harmony Hill is a luxurious villa tucked away in a traditional village in the heart of Bali. Perched upon
+                a
+                ridge, overlooking a gorgeous valley and luscious rice fields, we are a scenic 30 minute drive away from
+                both the bustling town of Ubud in the South and the jawdropping volcanic landscapes of Mount Batur in
+                the
+                North.
+            </p>
+            <br>
+            <p>
+                Our aim is to offer you a unique opportunity to find sanctuary in nature, while enjoying the comfort of
+                our
+                beautiful villa and the thoughtful service of our team.
+            </p>
+        </div>
     </section>
 
 
-    <section id="the-villa" class="three-panel">
+    <section id="the-villa" class="fixed-bg three-panel">
         <h2>The Villa</h2>
         <p><b>We are currently in the finishing stages of our beautiful villa. <br>Stay tuned for the final result or
                 reach
@@ -86,7 +106,7 @@
                 super-early-bird rates and support us as we get started &hearts;.</b></p>
 
         <!-- Container for large screens -->
-        <div class="three-panel-container row d-none d-md-flex">
+        <div class="three-panel-container row d-none d-lg-flex">
             <div class="col-md-4">
                 <img src="assets/ikut-celedu.jpg" alt="ikut celedu" class="img-fluid custom-rounded-img"
                     style="object-position: 50% 60%;">
@@ -110,29 +130,34 @@
         </div>
 
         <!-- Carousel for small screens -->
-        <div id="villa-carousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+        <div id="villa-carousel" class="carousel slide d-lg-none" data-bs-ride="carousel">
             <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="assets/ikut-celedu.jpg" alt="ikut celedu" class="img-fluid custom-rounded-img"
+                        style="object-position: 50% 65%;">
+                    <div class="carousel-caption start-0 end-0 bg-dark bg-opacity-50 p-3">
+                        <p>A home in authentic Balinese style, complete with spacious living room and kitchen. The
+                            perfect base
+                            from which to explore Bali.</p>
+                    </div>
+                </div>
                 <div class="carousel-item active">
                     <img src="assets/red-door-closeup.jpg" alt="Red Antique Carved Door"
                         class="img-fluid custom-rounded-img" style="object-position: 50% 65%;">
                     <div class="carousel-caption start-0 end-0 bg-dark bg-opacity-50 p-3">
-                        <p>Three unique bedrooms, each with ensuite bathroom.</p>
+                        <p>Three unique bedrooms, each with a spacious ensuite bathroom. A place to find rest and
+                            relaxation.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="assets/pool-from-stairs.jpg" alt="Jungle pool in the making"
                         class="img-fluid custom-rounded-img" style="object-position: 20% 30%;">
                     <div class="carousel-caption start-0 end-0 bg-dark bg-opacity-50 p-3">
-                        <p>Text for the second image.</p>
+                        <p>Your private jungle pool and tropical garden overlooking the beautiful valley of Maniktawang.
+                        </p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="assets/kitchen-in-progress.jpg" alt="Kitchen in progress"
-                        class="img-fluid custom-rounded-img" style="object-position: 50% 65%;">
-                    <div class="carousel-caption start-0 end-0 bg-dark bg-opacity-50 p-3">
-                        <p>Text for the third image.</p>
-                    </div>
-                </div>
+
             </div>
 
             <!-- Controls -->
@@ -176,14 +201,14 @@
                 <h2>Stay In</h2>
                 <p>Whether you want to relax on our wooden deck with a book and a tropical juice, pamper yourself with a
                     traditional Balinese massage or jump into your private pool, we've got you covered.</p>
-                <p>Here's some ideas for a cosy day at Harmony Hill:
+                <p>A cosy day at Harmony Hill:
+                    <br>... Enjoy a <b>floating breakfast</b> in your private jungle pool
                     <br>... Stroll around our <b>tropical fruit garden</b> and learn about the various plants
                     <br>... Make your way down the garden to the most dreamy valley filled with <b>rice paddies</b>
                     <br>... Bathe in a <b>natural waterfall</b>, just a 5 minute rice paddy walk from our doorstep
                     <br>... Join us as we prepare the <b>daily offerings</b> or "canang"
                     <br>... Play <b>Catan</b> with your friends and family (more board games to be added soon)
                     <br>... Grab a book from our <b>mini-library</b> or bring your own
-                    <br>... Enjoy a <b>floating breakfast</b> in your private jungle pool
                     <br>... Stretch out for a relaxing <b>spa treatment</b> of your choice (extra charge)
                     <br>... Learn how to <b>cook traditional Balinese food</b> in a delicious vegan version (extra
                     charge)
@@ -200,20 +225,22 @@
 
     </section>
 
-    <section id="explore" class="three-panel">
+    <section id="explore" class="fixed-bg three-panel">
         <h2>Explore</h2>
-        <p>Information about local attractions, activities, and excursions.</p>
+        <p>Our team will be more than happy to help you plan excursions to Bali's most beloved spots as well as local
+            hidden gems.</p>
 
         <!-- Container for large screens -->
-        <div class="three-panel-container row d-none d-md-flex">
+        <div class="three-panel-container row d-none d-lg-flex">
             <div class="col-md-4">
                 <img src="assets/gunung-kawi.jpg" alt="Gunung Kawi" class="img-fluid custom-rounded-img">
-                <p>Text for the first image.</p>
+                <p>Immerse yourself in the sacred stillness of Gunung Kawi, the Valley of The Balinese Kings.</p>
             </div>
 
             <div class="col-md-4">
-                <img src="assets/ricefield2.jpg" alt="Explore Image 3" class="img-fluid custom-rounded-img">
-                <p>Text for the third image.</p>
+                <img src="assets/barong2.jpg" alt="Barong Bali" class="img-fluid custom-rounded-img">
+                <p>Get lost in the bustling town of Ubud - Bali's cultural heartland and our personal vegan food heaven.
+                </p>
             </div>
             <div class="col-md-4">
                 <img src="assets/batur.avif" alt="Kintamani" class="img-fluid custom-rounded-img">
@@ -222,24 +249,26 @@
         </div>
 
         <!-- Carousel for small screens -->
-        <div id="explore-carousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+        <div id="explore-carousel" class="carousel slide d-lg-none" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="assets/gunung-kawi.jpg" alt="Gunung Kawi" class="img-fluid custom-rounded-img">
                     <div class="carousel-caption start-0 end-0 bg-dark bg-opacity-50 p-3">
-                        <p>Text for the first image.</p>
+                        <p>Immerse yourself in the sacred stillness of Gunung Kawi, the Valley of The Balinese Kings.
+                        </p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/food-sample.jpg" alt="Explore Image 2" class="img-fluid">
+                    <img src="assets/barong2.jpg" alt="Barong Bali" class="img-fluid custom-rounded-img">
                     <div class="carousel-caption start-0 end-0 bg-dark bg-opacity-50 p-3">
-                        <p>Text for the second image.</p>
+                        <p>Get lost in the bustling town of Ubud - Bali's cultural heartland and our personal vegan food
+                            heaven.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/food-sample.jpg" alt="Explore Image 3" class="img-fluid">
+                    <img src="assets/batur.avif" alt="Kintamani" class="img-fluid custom-rounded-img">
                     <div class="carousel-caption start-0 end-0 bg-dark bg-opacity-50 p-3">
-                        <p>Text for the third image.</p>
+                        <p>Hike up Mount Batur and watch the sun rise over Bali's most sacred Mount Agung.</p>
                     </div>
                 </div>
             </div>
@@ -255,6 +284,137 @@
             </a>
         </div>
     </section>
+
+
+    <section id="goodtoknow" class="margin-on">
+        <h2>Good To Know</h2>
+        <p>
+
+        </p>
+
+
+        <div class="row align-items-center">
+            <div class="col-lg-4  heart-image-container">
+
+                <img src="assets/smileyinsect.png" alt="smiling insect" class="img-fluid">
+                <img src="assets/cats-heart.png" alt="harmony hill cats" class="img-fluid">
+
+            </div>
+            <div id="goodtoknow-points" class="col-lg-7">
+
+                <ul class="leaf-bullets">
+                    <li><i class="fas fa-leaf"></i> We are located in a lush jungle environment, which means many
+                        wonderous creatures made their home here long before we did. We don't have any poisonous bugs or
+                        lizzies
+                        here, just really colorful and oddly shaped ones. Just look at that little smiley face :)
+                    </li>
+                    <li><i class="fas fa-leaf"></i>The largest and furriest creatures you're likely to encounter are our
+                        four Bali kittens - all foundlings who found their way into our hearts</li>
+                    <li><i class="fas fa-leaf"></i> Harmony Hill is located about 20 minutes
+                        north of Ubud, at an
+                        elevation of 500m. That means we don't need aircon and can instead rely on natural
+                        ventilation
+                        to ensure
+                        you have a restful sleep. </li>
+                    <li><i class="fas fa-leaf"></i> We do our best to make Harmony Hill as sustainable as possible
+                        <ul>
+                            <li>We capture and filter rain water for toilets and showers </li>
+                            <li>Our drinking water is filtered using ancient ceramic filtering techniques (find out more
+                                on <a href="https://www.terrawaterindonesia.com/" class="green-link">Terra</a>'s
+                                website)</li>
+                            <li>Our menu evolves with the seasons and nearly all our products are locally sourced</li>
+                            <li> We are building a food garden, which provides jackfruit, durian, passion fruit,
+                                chaya (the miracle spinach tree) amongst other treasures</li>
+                            <li>Any food scraps are composted in our garden</li>
+                            <li> We are striving to make our villa plastic free </li>
+                        </ul>
+                        We are always looking for ways to do better so we'd love to hear from you if you have
+                        suggestions or ideas &hearts;
+
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+
+    </section>
+    <div id="leaf-divider">
+        <img src="assets/leaf-divider.png" alt="leafy divider">
+    </div>
+
+
+    <section id="rates" class="margin-on">
+        <h2>Rates</h2>
+        <p>
+            Some of you have asked already about how to book Harmony Hill, even as we put the last loving touches on our
+            villa.
+            <br>
+            We love you for your kind support and decided to offer a <strong>"soft opening package"</strong> for
+            those wonderful souls who want to be our first guests and help us breathe life into Harmony Hill &hearts;
+        </p>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <img src="assets/logo-leaves-colored-transparent.svg" alt="Logo" class="img-fluid">
+            </div>
+            <div id="inclusions" class="col-md-8">
+
+                <strong>Nightly rate for our private 3-bedroom villa with private pool:</strong>
+                <span class="rate">Rp 2.400.000</span>
+                <del>Rp 6.000.000</del>
+                <br>
+
+                <span>
+                    <strong>Including:</strong><br>
+                    &hearts; Delicious Vegan Breakfast<br>
+                    &hearts; 100% Vegan Amenities<br>
+                    &hearts; Our Wonderful Team ready to make your stay unforgettable<br><br>
+                    <strong>Special inclusions for our soft opening package:</strong><br>
+                    &hearts; Guided Village and Rice Paddy Walk with Dewa<br>
+                    &hearts; Making Canang (Balinese Offerings) Workshop<br>
+                    &hearts; 20% Off Massage Treatments<br>
+                    &hearts; 10% Off Our Homecooked Vegan Lunches and Dinners<br>
+                    <br>
+                    &hearts; Complimentary Vegan Dessert Tasting - minimum stay 2 nights<br>
+                    &hearts; Complimentary Three Course Dinner - minimum stay 3 nights<br>
+                    <br>
+
+                </span>
+            </div>
+        </div>
+
+        <p>
+            <i>Valid for bookings between October 20, 2024 and January 15, 2025</i>
+        </p>
+        <p>
+            <strong>This offer is limited to the <u>first 20 nights booked</u> so contact us soon to lock in your
+                dates.</strong>
+        </p>
+
+    </section>
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        <p><b>For early bird bookings or to discuss partnerships, please contact us via <a
+                    href="mailto:harmonyhillbali@gmail.com" target="_blank">harmonyhillbali@gmail.com</a> or
+                reach out on social media.</b></p>
+
+        <p>
+            <a href="https://www.facebook.com/profile.php?id=61564303381449" target="_blank" class="social-med-icons">
+                <i class="fab fa-facebook"></i>
+            </a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.instagram.com/harmonyhill.vegan" target="_blank" class="social-med-icons" id="insta">
+                <i class="fab fa-instagram "></i>
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://id.pinterest.com/harmonyhillbali/" target="_blank" class="social-med-icons">
+                <i class="fab fa-pinterest"></i>
+            </a>
+        </p>
+    </section>
+
 
     <footer>
         <p>&copy; 2024 Harmony Hill. All rights reserved.</p>
