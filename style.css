@@ -200,11 +200,18 @@ video:-ms-controls-panel {
     padding: 0 20px;
 }
 
-/* #about-us {
+#about-us {
     padding: 30px 25%;
 }
 
-#about-us p {
+/* reduce padding for smaller screens */
+@media (max-width: 768px) {
+    #about-us {
+        padding: 20px 40px; /* Fixed padding in pixels */
+    }
+}
+
+/*#about-us p {
     padding: 0;
 } */
 
