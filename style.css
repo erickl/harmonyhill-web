@@ -116,30 +116,31 @@ video:-ms-controls-panel {
 
 
 .hero-video video {
-
     position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-
     z-index: -1;
-
     object-fit: cover;
+}
+
+.nook-hh-logo-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 1; /*bring text forward over video*/
+    text-align: left;
 }
 
 
 
-
 .logo-container {
-
+    position: absolute;
     margin: 0;
-
-    z-index: 1;
-    /*bring text forward over video*/
+    z-index: 1; /*bring text forward over video*/
     text-align: center;
-
-
 }
 
 .hotel-slogan {
