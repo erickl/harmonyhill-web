@@ -426,6 +426,11 @@ video:-ms-controls-panel {
 
 }
 
+#book-now {
+    text-align: left;
+    display: inline-block;
+}
+
 #inclusions {
     text-align: left;
     display: inline-block;
