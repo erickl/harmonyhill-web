@@ -426,6 +426,12 @@ video:-ms-controls-panel {
 
 }
 
+#nook-title {
+    font-size: 56px;
+    line-height: 1;
+    font-family: 'Playfair Display SC', serif;
+}
+
 #book-now {
     text-align: left;
     display: inline-block;
