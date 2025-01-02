@@ -134,6 +134,14 @@ video:-ms-controls-panel {
     text-align: left;
 }
 
+.hh-nook-logo-container {
+    margin: 10px;
+    font-size: 40px;
+    line-height: 0.5;
+    font-family: 'Playfair Display SC', serif;
+    text-align: center;
+}
+
 
 
 .logo-container {
@@ -281,7 +289,11 @@ video:-ms-controls-panel {
 #the-villa {
     text-align: center;
     background-image: url('assets/pool-empty.jpg');
+}
 
+#the-nook {
+    text-align: center;
+    background-image: url('assets/ricefield1.jpg'); /* todo: doesn't work with nook-deck, but why? */
 }
 
 #explore {
