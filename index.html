@@ -207,10 +207,34 @@
                 <p>In addition to our menu and seasonal suggestions, our wonderful chef is entirely at your disposal
                     during your stay and would be more than happy to try out new recipes upon request. </p>
             </div>
-            <div class="col-lg-6 order-lg-1">
-                <!-- <img src="assets/food-sample.jpg" alt="Nature's Kitchen Image" class="img-fluid custom-rounded-img"> -->
-                <img src="assets/lentil_bolo2.jpeg" alt="Nature's Kitchen Image" class="img-fluid custom-rounded-img">
-            </div>
+
+            <div id="food-carousel" class="carousel slide col-lg-6 order-lg-1" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="assets/lentil_bolo2.jpeg" alt="lentil bolognese" class="img-fluid custom-rounded-img"
+                            style="object-position: 50% 65%;">
+                        <div class="carousel-caption start-0 end-0 p-3">
+                            <p>Lentil Bolognese</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="assets/sushi.jpeg" alt="Sushi"
+                            class="img-fluid custom-rounded-img" style="object-position: 50% 65%;">
+                        <div class="carousel-caption start-0 end-0 p-3">
+                            <p>Sushi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+            <a class="carousel-control-prev" href="#food-carousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#food-carousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
         </div>
     </section>
 
