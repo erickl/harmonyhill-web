@@ -13,6 +13,14 @@ body {
 
 }
 
+.back-arrow {
+    font-size: 3rem;
+    color: rgb(43, 87, 63);
+    text-decoration: none;
+    vertical-align: middle;
+    margin: 10px 10px;
+}
+
 section,
 footer {
     background-color: #E8E0D0;
@@ -41,7 +49,6 @@ img {
     color: rgb(43, 87, 63);
     font-weight: 800;
     text-decoration: none;
-
 }
 
 
