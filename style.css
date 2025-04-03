@@ -291,7 +291,13 @@ video:-ms-controls-panel {
 
 }
 
-
+.see-more-pics {
+    position:relative; 
+    z-index:2; 
+    text-decoration: none; 
+    color:inherit; 
+    font-weight: bold;
+}
 
 #the-villa {
     text-align: center;
