@@ -1,0 +1,22 @@
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+}
+
+.calendar-cell {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.calendar-cell.unavailable {
+    background-color: #f8d7da;
+    color: #555;
+}
+
+.calendar-cell.available {
+    background-color: #d4edda;
+    cursor: pointer;
+}
