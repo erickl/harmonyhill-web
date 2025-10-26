@@ -1,5 +1,6 @@
 //const API_URL = "http://localhost:5001/harmonyhill-1/us-central1/getOccupancy";
-const API_URL = "https://getoccupancy-wkpzhxz7jq-uc.a.run.app";
+//const API_URL = "https://getoccupancy-wkpzhxz7jq-uc.a.run.app";
+const API_URL = "https://us-central1-harmonyhill-1.cloudfunctions.net/getOccupancy";
 
 let currentYear;
 let currentMonth; // 0-indexed (0=Jan, 11=Dec)
@@ -7,7 +8,12 @@ let currentMonth; // 0-indexed (0=Jan, 11=Dec)
 async function renderCalendar(containerId, house, year, month) {
     month = parseInt(month);
 
-    const res = await fetch(`${API_URL}?house=${house}&year=${year}&month=${(month+1)}`);
+    let res = null;
+    try {
+        res = await fetch(`${API_URL}?house=${house}&year=${year}&month=${(month+1)}`);
+    } catch(e) {
+        console.log(`Couldn't fetch calendar for ${house}/${year}/${month+1} ${e.message}`);
+    }
     const data = await res.json();
 
     const bookedDates = data[String(month+1)] || [];
@@ -63,7 +69,7 @@ async function renderCalendar(containerId, house, year, month) {
                 let cell = row.insertCell();
                 cell.textContent = dayCounter;
 
-                if(dayCounter < today.getDate()) {
+                if(dayCounter < today.getDate() && month === today.getMonth()) {
                     cell.classList.add('unavailable');
                 } else if (bookedDates.includes(dayCounter)) {
                     cell.classList.add('unavailable');
