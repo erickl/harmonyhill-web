@@ -414,6 +414,10 @@ video:-ms-controls-panel {
     background-image: url('assets/ricefield1.jpg');
 }
 
+#availability {
+    text-align: center;
+}
+
 #rates,
 #goodtoknow {
     text-align: center;
