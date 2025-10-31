@@ -644,16 +644,36 @@ video:-ms-controls-panel {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
-
-.calendar {
-    width: auto;
+.calendar-row-wrapper {
     display: flex;
-    text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    padding-bottom: 1em;
+    margin: 1rem 0; 
+    /* margin: 0 auto;  */
+    width: fit-content;
+}
 
+.calendars-row-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 auto; 
+    width: fit-content;
+}
+
+.calendar {
+    /* width: auto; */
+    /* justify-content: center; */
+    /* margin: 0 auto; */
+    flex-shrink: 0;
+    padding: 0 10px;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 1em;
     border-collapse: collapse;
     font-family: sans-serif;
 }
@@ -700,29 +720,14 @@ video:-ms-controls-panel {
     /* Indicate availability on hover (optional) */
 }
 
-.calendar-row-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto; 
-    width: fit-content;
-}
-
-.calendars-row-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 0 auto; 
-    width: fit-content;
-}
-
 .arrow {
-  display: inline-block;
-  font-size: 5rem;
-  color: #284650;
-  cursor: pointer;
-  transition: transform 0.2s;
-  padding: 0.1em;
+  /* display: inline-block; */
+    line-height: 1;
+    user-select: none;
+
+    font-size: 5rem;
+    color: #284650;
+    cursor: pointer;
+    transition: transform 0.2s;
+    padding: 0.1em;
 }
