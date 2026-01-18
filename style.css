@@ -80,6 +80,37 @@ img {
     text-decoration: underline;
 }
 
+.booking-button {
+    /* Position */
+    z-index: 1000;
+
+    width: fit-content;
+    display: inline-block;
+
+    /* Shape & Appearance */
+    background-color: rgba(17, 72, 47, 0.9);
+    
+    padding: 0.75em 1.5em; /* Generous padding for a larger touch area */
+    border-radius: 50px; /* High radius creates the pill shape */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow makes it pop off the page */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+
+    /* Text */
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+}
+
+.booking-button a {
+    text-decoration: none;
+    color: white;
+    display: block; /* Makes the entire button clickable */
+}
+
 .sticky-button {
     /* Position */
     position: fixed;
@@ -416,6 +447,11 @@ video:-ms-controls-panel {
 
 #availability {
     text-align: center;
+}
+
+.availability-text {
+    text-align: center;
+    display: inline-block;
 }
 
 #rates,
