@@ -6,8 +6,6 @@ body {
     font-weight: 400;
     color: #284650;
     background-color: #E8E0D0;
-
-
 }
 
 .back-arrow {
@@ -29,8 +27,6 @@ p {
     margin: 0;
 }
 
-
-
 h2 {
     font-size: 4em;
     font-weight: normal;
@@ -42,12 +38,10 @@ img {
 }
 
 .green-link {
-
     color: rgb(43, 87, 63);
     font-weight: 800;
     text-decoration: none;
 }
-
 
 .col-md-6 {
     padding: 0;
@@ -55,6 +49,13 @@ img {
 
 .row {
     margin: 0;
+}
+
+.book-now-header {
+    margin: 0.3rem;
+    border: 2px solid white;
+    width: fit-content;
+    white-space: nowrap
 }
 
 .sticky-banner {
@@ -90,7 +91,7 @@ img {
     /* Shape & Appearance */
     background-color: rgba(17, 72, 47, 0.9);
     
-    padding: 0.75em 1.5em; /* Generous padding for a larger touch area */
+    padding: 0.25em 1em; /* Generous padding for a larger touch area */
     border-radius: 50px; /* High radius creates the pill shape */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow makes it pop off the page */
     transition: transform 0.2s ease-in-out; /* Smooth hover effect */
@@ -105,12 +106,6 @@ img {
     margin-bottom: 1rem;
 }
 
-.booking-button a {
-    text-decoration: none;
-    color: white;
-    display: block; /* Makes the entire button clickable */
-}
-
 .sticky-button {
     /* Position */
     position: fixed;
@@ -121,26 +116,15 @@ img {
     /* Shape & Appearance */
     background-color: rgba(17, 72, 47, 0.9);
     
-    padding: 0.75em 1.5em; /* Generous padding for a larger touch area */
+    padding: 0.2em 0.8em; /* Generous padding for a larger touch area */
     border-radius: 50px; /* High radius creates the pill shape */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow makes it pop off the page */
     transition: transform 0.2s ease-in-out; /* Smooth hover effect */
-
-    /* Text */
-    text-align: center;
-    font-size: 0.8em;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.sticky-button a {
-    text-decoration: none;
-    color: white;
-    display: block; /* Makes the entire button clickable */
 }
 
 /* Hover Effect */
-.sticky-button:hover {
+.sticky-button:hover, 
+.booking-button:hover {
     background-color: #8bb28e; /* Subtle color change on hover */
     transform: translateY(-2px); /* Lifts the button slightly */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
@@ -159,7 +143,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    width: fit-content;
+
     /* Shape & Appearance */
     background-color: rgba(17, 72, 47, 0.9);
     padding: 0.75em 0.75em 0.75em 0.75em; /*Generous padding for a larger touch area */
@@ -168,14 +153,33 @@ img {
     transition: transform 0.2s ease-in-out; /* Smooth hover effect */
 }
 
+.sticky-button, 
+.sticky-button-left,
+.sticky-button a, 
+.sticky-button p,
+.sticky-button-left a,
+.sticky-button-left p,
+.booking-button,
+.booking-button a {
+    font-family: inherit; /* Takes the font from the body or parent */
+    text-decoration: none; /* Removes the link underline if you want */
+    color: white; /* Keeps the text color consistent */
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sticky-button-left:hover {
+    background-color: #8bb28e; /* Subtle color change on hover */
+    transform: translateY(-2px); /* Lifts the button slightly */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+}
 
 video::-webkit-controls-panel,
 video::-moz-controls-panel,
 video:-ms-controls-panel {
     display: none;
 }
-
-
 
 .hero-video {
     position: relative;
@@ -251,13 +255,15 @@ video:-ms-controls-panel {
 }
 
 .main-nav {
+    display: flex;
+
     /* start in second half of page */
     grid-row: 1;
     grid-column-start: 2;
 
-  /* display: flex;
-  justify-content: flex-end; /* pushes hamburger to right */
-  align-items: center; */
+    /* display: flex;
+    justify-content: flex-end; /* pushes hamburger to right */
+    align-items: center; */
 
     /* position on the top part of the video */
     align-self: start;
@@ -309,7 +315,7 @@ video:-ms-controls-panel {
 }
 
 /* ✅ Responsive: On smaller screens */
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .main-nav-links {
     position: absolute;
     top: 60px;
@@ -376,9 +382,6 @@ video:-ms-controls-panel {
     /* Changes text color for contrast */
     padding: 50px 20px;
     /* Adjusts padding */
-
-
-
 }
 
 .fixed-bg::before {
