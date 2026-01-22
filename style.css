@@ -137,8 +137,8 @@ img {
     left: 1.5em; /* Increase distance from the edge slightly */
     z-index: 1000;
 
-    width: 60px;
-    height: 60px;
+    /* width:  1rem; */
+    height: 3.4rem;
 
     display: flex;
     justify-content: center;
@@ -453,6 +453,11 @@ video:-ms-controls-panel {
 }
 
 .availability-text {
+    text-align: center;
+    display: inline-block;
+}
+
+.contact-us-text {
     text-align: center;
     display: inline-block;
 }
