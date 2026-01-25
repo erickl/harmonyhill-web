@@ -336,11 +336,29 @@ video:-ms-controls-panel {
   }
 }
 
-.custom-rounded-img {
+.custom-rounded-img  {
+    
     border-top-right-radius: 80px;
     border-bottom-left-radius: 80px;
     overflow: hidden;
     position: relative;
+}
+
+.custom-rounded-img .carousel-caption {
+    position: absolute;       /* Absolute inside a Relative parent */
+    bottom: 0 !important;     /* Forces it to the very bottom edge */
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 !important;     /* Removes Bootstrap's default centering margins */
+    width: 100%;
+}
+
+.custom-rounded-img .carousel-caption p {
+    margin-bottom: 0;
+    bottom: 0 !important;
+    font-size: 12px;      
+    line-height: 1.4;   
+    font-weight: 400;  
 }
 
 .margin-on {
