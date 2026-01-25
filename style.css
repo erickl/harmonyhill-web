@@ -339,6 +339,8 @@ video:-ms-controls-panel {
 .custom-rounded-img {
     border-top-right-radius: 80px;
     border-bottom-left-radius: 80px;
+    overflow: hidden;
+    position: relative;
 }
 
 .margin-on {
