@@ -43,6 +43,21 @@ img {
     text-decoration: none;
 }
 
+.white-link {
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.thank-you-note {
+    text-align: center;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+}
+
 .col-md-6 {
     padding: 0;
 }
@@ -247,6 +262,7 @@ video:-ms-controls-panel {
     margin: 0;
     z-index: 1; /*bring text forward over video*/
     text-align: center;
+    height: auto;
 }
 
 .hotel-slogan {
