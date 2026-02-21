@@ -605,11 +605,21 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-    <script type="module">
+    <!-- <script type="module">
         import { setupCalendar } from '/js/calendar.js';
         setupCalendar("hh", "harmony-hill");
         setupCalendar("jn", "the-jungle-nook");
+    </script> -->
+
+    <!-- Trying this out to see if it breaks the waiting time in the network tree -->
+    <script type="module">
+        // This happens in the background without blocking the rest
+        import('/js/calendar.js').then(module => {
+            module.setupCalendar("hh", "harmony-hill");
+            module.setupCalendar("jn", "the-jungle-nook");
+        });
     </script>
+
 
     <script type="module">
         import { setupVillasDropdown } from '/js/villa-dropdown.js';
