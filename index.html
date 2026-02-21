@@ -631,10 +631,16 @@
             observer.observe(target);
         }
     </script>
-    <script type="module">
+
+    <script src="/js/script.js" defer></script>
+
+    <!-- commented this out so the above can have the defer attribute -->
+    <!-- <script type="module">
         import { showHamburgerMenu } from './script.js';
         showHamburgerMenu();
-    </script>
+    </script> -->
+
+    <!-- eline commented the below out because seems unused -->
     <!-- <script type="module">
         import { setupVillasDropdown } from '/js/villa-dropdown.js';
         setupVillasDropdown(); // Call the setup function when the module loads
