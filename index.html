@@ -613,13 +613,24 @@
 
     <!-- Trying this out to see if it breaks the waiting time in the network tree -->
     <script type="module">
-        // This happens in the background without blocking the rest
-        import('/js/calendar.js').then(module => {
-            module.setupCalendar("hh", "harmony-hill");
-            module.setupCalendar("jn", "the-jungle-nook");
-        });
-    </script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // This only triggers when the user scrolls to the calendar
+                    import('/js/calendar.js').then(module => {
+                        module.setupCalendar("hh", "harmony-hill");
+                        module.setupCalendar("jn", "the-jungle-nook");
+                    });
+                    observer.disconnect(); // Stop watching once loaded
+                }
+            });
+        }, { rootMargin: '200px' }); // Starts loading 200px before user reaches it
 
+        const target = document.querySelector('#availability');
+        if (target) {
+            observer.observe(target);
+        }
+    </script>
 
     <script type="module">
         import { setupVillasDropdown } from '/js/villa-dropdown.js';
