@@ -4,29 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <style>
-        /* 1. Only reserve the space. Don't touch the fonts or logo size yet. */
+        /* Lock the Hero height immediately */
         .hero-video {
             position: relative;
             width: 100%;
-            min-height: 100vh;
-            aspect-ratio: 16 / 9;
-
+            min-height: 100svh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: #2a2a2a; */
+            overflow: hidden;
         }
 
-        /* 2. Keep the video in place but don't force 'absolute' if 'fixed' was working for your design */
-        .hero-video video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* 3. Just ensure the logo starts centered */
+        /* Reserve space for the Logo so it doesn't cause the 0.094 shift */
         .logo-container {
-            z-index: 10;
-            text-align: center;
+            width: 100%;
+            max-width: 540px;
+            /* Matches your image width */
+            aspect-ratio: 1 / 1;
+            /* Matches your 540x540 dimensions */
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Prevent 'img-fluid' from causing a 0px height start */
+        .logo-container img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 540 / 540;
         }
     </style>
-
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
