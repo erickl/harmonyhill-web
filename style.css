@@ -237,7 +237,7 @@ video:-ms-controls-panel {
     font-style: normal;
 
     color: white;
-
+    aspect-ratio: 16 / 9;
 
 }
 
