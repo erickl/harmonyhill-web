@@ -226,21 +226,20 @@ video:-ms-controls-panel {
     /* height: 100vh;
     width: 100vw; */
 
-    overflow: hidden;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     font-family: "Playfair Display SC", serif;
     font-weight: 700;
     font-style: normal;
 
-    color: white;
-
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    /* Use svh to prevent mobile "jumping" when the address bar hides */
+    min-height: 100svh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* This ensures the container has shape before the video loads */
     aspect-ratio: 16 / 9;
 
 }
@@ -254,17 +253,20 @@ video:-ms-controls-panel {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+
+    z-index: 0;
 }
 
 
 .hero-video video {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     z-index: -1;
     object-fit: cover;
+
 }
 
 .nook-hh-logo-container {
