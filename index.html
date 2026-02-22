@@ -47,7 +47,7 @@
                 'gtm.start':
                     new Date().getTime(), event: 'gtm.js'
             }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.defer = true; j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-N5VDX2B4');
     </script>
@@ -597,7 +597,8 @@
         </div>
         <div class="booking-button">
             <p>
-                <a href="https://wa.me/message/TVA3I5GFI5VLO1" target="_blank" class="social-med-icons">
+                <a href="https://wa.me/message/TVA3I5GFI5VLO1" target="_blank" class="social-med-icons"
+                    aria-label="WhatsApp link">
                     <i class="fab fa-whatsapp"></i>
                     Enquire
                 </a>
