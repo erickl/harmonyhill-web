@@ -144,9 +144,16 @@
     </header>
 
     <div class="hero-video">
-        <video autoplay loop muted playsinline webkit-playsinline width="1920" height="1080" fetchpriority="high"
+        <!-- <video autoplay loop muted playsinline webkit-playsinline width="1920" height="1080" fetchpriority="high"
             poster="assets/hero-video-fallback.avif">
             <source src="assets/new-hero-video-720.mp4" type="video/mp4">
+        </video> -->
+
+        <video autoplay loop muted playsinline width="1920" height="1080" poster="assets/hero-video-fallback.avif"
+            fetchpriority="high" style="aspect-ratio: 16 / 9; width: 100%; height: auto;">
+            <source src="assets/new-hero-video-720.mp4" type="video/mp4" media="(min-width: 769px)">
+
+            <source src="assets/hero-video-mobile.mp4" type="video/mp4">
         </video>
 
         <div class="logo-container">
