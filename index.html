@@ -10,6 +10,35 @@
     <!-- preload background img so it doesn't wait until css is loaded -->
     <!-- <link rel="preload" as="image" href="assets/ricefield1.avif" fetchpriority="high"> -->
     <style>
+        .mobile-hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .mobile-hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* This makes it look like a background */
+        }
+
+        /* Helper classes to toggle between mobile and desktop */
+        @media (max-width: 767px) {
+            .d-md-block {
+                display: none !important;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .d-md-none {
+                display: none !important;
+            }
+        }
+
         /* Lock the Hero height immediately */
         .hero-video {
             position: relative;
@@ -419,17 +448,24 @@
     </header>
 
     <div class="hero-video">
-        <!-- <video autoplay loop muted playsinline webkit-playsinline width="1920" height="1080" fetchpriority="high"
-            poster="assets/hero-video-fallback.avif">
-            <source src="assets/new-hero-video-720.mp4" type="video/mp4">
-        </video> -->
 
-        <video autoplay loop muted playsinline width="1920" height="1080" poster="assets/hero-video-fallback.avif"
+
+        <!-- <video autoplay loop muted playsinline width="1920" height="1080" poster="assets/hero-video-fallback.avif"
             fetchpriority="high">
             <source src="assets/new-hero-video-720.mp4" type="video/mp4" media="(min-width: 769px)">
 
             <source src="assets/hero-video-mobile.mp4" type="video/mp4">
+        </video> -->
+
+        <video autoplay loop muted playsinline class="d-none d-md-block" poster="assets/hero-video-fallback.avif"
+            width="1920" height="1080">
+            <source src="assets/new-hero-video-720.mp4" type="video/mp4">
         </video>
+
+        <div class="mobile-hero-image d-md-none">
+            <img src="assets/hero-video-fallback.avif" alt="Harmony Hill Retreat" width="800" height="1200"
+                fetchpriority="high">
+        </div>
 
         <div class="logo-container">
             <img src="assets/logo-white-transparent-background.avif" alt="Harmony Hill Logo" width="540" height="540"
