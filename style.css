@@ -410,7 +410,7 @@ video:-ms-controls-panel {
 .custom-rounded-img .carousel-caption p {
     margin-bottom: 0;
     bottom: 0 !important;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.4;
     font-weight: 400;
 }
