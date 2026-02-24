@@ -28,7 +28,7 @@ p {
 }
 
 h2 {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: normal;
     /* margin: 0; */
 }
@@ -68,6 +68,7 @@ img {
 
 .book-now-header {
     margin: 0.3rem;
+    padding: 0.3rem;
     border: 2px solid white;
     width: fit-content;
     white-space: nowrap
@@ -366,24 +367,36 @@ video:-ms-controls-panel {
 /* ✅ Responsive: On smaller screens */
 @media (max-width: 1000px) {
     .main-nav-links {
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: none;
-        flex-direction: column;
-        width: 200px;
         display: none;
-        /* hidden by default */
+        /* Hide by default */
+        position: absolute;
+        top: 100%;
+        /* Sits right below the banner */
+        left: 0;
+        width: 100%;
+        background-color: rgba(17, 72, 47, 0.95);
+        /* Matches your brand green */
+        flex-direction: column;
+        padding: 20px 0;
+        text-align: center;
+        z-index: 1000;
     }
 
-    .main-nav-links.show {
-        display: flex;
+    /* This class is what the JavaScript will toggle */
+    .main-nav-links.active {
+        display: flex !important;
+    }
+
+    .main-nav-links li {
+        display: block;
+        margin: 10px 0;
     }
 
     .hamburger {
-        display: block;
-        /* show the button */
+        display: block !important;
         margin-left: auto;
+        padding-right: 20px;
+        font-size: 2rem;
     }
 }
 
@@ -616,8 +629,10 @@ video:-ms-controls-panel {
     list-style: none;
 }
 
-.leaf-bullets li {
-    margin-bottom: 10px;
+.leaf-bullets-li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
     /* Optional: Add space between items */
 
     position: relative;
@@ -626,24 +641,23 @@ video:-ms-controls-panel {
     /* Aligns the first line of text with the icon */
 }
 
-.leaf-bullets li i {
-    color: rgb(43, 87, 63);
-    /* Customize the color of the leaf icon */
-    margin-right: 10px;
-    /* Add space between the icon and text */
-    font-size: 25px;
-    /* Adjust the size of the icon */
-    vertical-align: middle;
-    /* Align the icon vertically with the text */
 
-
-    position: absolute;
-    left: 0;
-    top: 0.1em;
-    /* Adjusts the icon position vertically */
+.leaf-bullets svg {
+    flex-shrink: 0;
+    /* Prevents the leaf from getting squashed */
+    width: 24px;
+    /* Adjust size as needed */
+    height: auto;
+    margin-right: 15px;
+    /* Space between leaf and text */
+    margin-top: 4px;
+    /* Nudges leaf down slightly to align with first line */
+    fill: rgba(17, 72, 47, 0.9);
 }
 
-.leaf-bullets li li {
+.leaf-bullets-li ul {
+    display: block;
+    list-style: circle;
     margin-left: 25px;
     /* round bullet point move right */
     padding-left: 10px;
