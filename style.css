@@ -429,7 +429,7 @@ video:-ms-controls-panel {
 }
 
 .margin-on {
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 #about-us {
@@ -452,8 +452,13 @@ video:-ms-controls-panel {
     padding-top: 20px;
 }
 
-#stay-in {
+#stay-in,
+ready-paradise {
     padding-bottom: 20px;
+}
+
+#ready-paradise img {
+    padding: 20px;
 }
 
 .fixed-bg {
@@ -551,7 +556,7 @@ video:-ms-controls-panel {
     display: inline-block;
 }
 
-#rates,
+
 #goodtoknow {
     text-align: center;
     /* background-color: rgb(1, 49, 39); */
@@ -636,7 +641,7 @@ video:-ms-controls-panel {
     /* Optional: Add space between items */
 
     position: relative;
-    padding-left: 50px;
+    padding-left: 10px;
     /* Add space for the leaf icon */
     /* Aligns the first line of text with the icon */
 }
@@ -869,4 +874,8 @@ video:-ms-controls-panel {
     cursor: pointer;
     transition: transform 0.2s;
     padding: 0.1em;
+}
+
+#inclusions div {
+    padding-top: 10px;
 }
