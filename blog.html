@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony Hill Blog</title>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* BOOTSTRAP LITE: Layout & Grid */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 0;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .row>* {
+            flex-shrink: 0;
+            width: 100%;
+            max-width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .col-9 {
+            flex: 0 0 auto;
+            width: 75%;
+        }
+
+        .col-md-4 {
+            flex: 0 0 auto;
+            width: 33.333333%;
+        }
+
+        .col-md-6 {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+
+        .col-md-8 {
+            flex: 0 0 auto;
+            width: 66.666667%;
+        }
+
+        .col-lg-4 {
+            flex: 0 0 auto;
+            width: 33.333333%;
+        }
+
+        .col-lg-6 {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+
+        .col-lg-7 {
+            flex: 0 0 auto;
+            width: 58.333333%;
+        }
+
+        .order-lg-1 {
+            order: 1 !important;
+        }
+
+        .order-lg-2 {
+            order: 2 !important;
+        }
+
+        .align-items-center {
+            align-items: center !important;
+        }
+
+        /* Display Utilities (For your Explore section) */
+        .d-none {
+            display: none !important;
+        }
+
+        @media (min-width: 992px) {
+            .d-lg-flex {
+                display: flex !important;
+            }
+
+            .d-lg-none {
+                display: none !important;
+            }
+        }
+
+        /* Images & Helpers */
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+        .bg-dark {
+            --bs-bg-opacity: 1;
+            background-color: rgba(33, 37, 41, var(--bs-bg-opacity)) !important;
+        }
+
+        .bg-opacity-50 {
+            --bs-bg-opacity: 0.5;
+        }
+
+        .p-3 {
+            padding: 1rem !important;
+        }
+
+        /* 1. THE MATH FIX (Crucial) */
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        /* 2. THE GRID (Side-by-side logic) */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .row>* {
+            flex-shrink: 0;
+            width: 100%;
+            max-width: 100%;
+            padding-right: 0px;
+            padding-left: 15px;
+        }
+
+        /* Side-by-side for Tablets (md) */
+        @media (min-width: 768px) {
+            .col-md-4 {
+                flex: 0 0 auto;
+                width: 33.333333%;
+            }
+
+            .col-md-6 {
+                flex: 0 0 auto;
+                width: 50%;
+            }
+
+            .col-md-8 {
+                flex: 0 0 auto;
+                width: 66.666667%;
+            }
+        }
+
+        /* Side-by-side for Desktop (lg) */
+        @media (min-width: 992px) {
+            .col-lg-4 {
+                flex: 0 0 auto;
+                width: 33.333333%;
+            }
+
+            .col-lg-6 {
+                flex: 0 0 auto;
+                width: 50%;
+            }
+
+            .col-lg-7 {
+                flex: 0 0 auto;
+                width: 58.333333%;
+            }
+
+            .order-lg-1 {
+                order: 1 !important;
+            }
+
+            .order-lg-2 {
+                order: 2 !important;
+            }
+        }
+
+        /* 3. ALIGNMENT */
+        .align-items-center {
+            align-items: center !important;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <section class="margin-on">
+            <h2 class="section-title">Nature's Journal</h2>
+            <div class="row">
+                <article class="col-md-6 col-lg-4 blog-card">
+                    <div class="custom-rounded-img">
+                        <img src="assets/ricefield2-resize.avif" alt="Morning ritual" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">Feb 25, 2026</span>
+                        <h3>The Art of the Morning Canang</h3>
+                        <p>Discover the meaning behind the daily offerings you see throughout the villa...</p>
+                        <a href="blog-post-1.html" class="green-link">Read More &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="col-md-6 col-lg-4 blog-card">
+                    <div class="custom-rounded-img">
+                        <img src="assets/sushi.avif" alt="Vegan Bali" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">Feb 10, 2026</span>
+                        <h3>5 Best Vegan Spots in Ubud</h3>
+                        <p>Our curated guide to the most delicious plant-based gems just 30 minutes away...</p>
+                        <a href="blog-post-2.html" class="green-link">Read More &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
