@@ -1,0 +1,139 @@
+h2 {
+    text-align: center;
+    font-size: 10px;
+}
+
+
+
+/* .blog-card {
+    margin-bottom: 3rem;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 1.5rem 0;
+}
+
+.blog-date {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #7d8f69;
+}
+
+.blog-content h3 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+} */
+
+
+/* Typography and Base Layout */
+.blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    /* Clean, modern font */
+    line-height: 1.8;
+    color: #2d2d2d;
+}
+
+.post-title {
+    /* Elegant Serif for luxury feel */
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.post-meta {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+/* Featured Image */
+.featured-image {
+    margin: 40px -20px;
+    /* Full-bleed effect on small screens */
+    width: 100%;
+    height: 100vh;
+    /* 100% of the viewport height */
+    overflow: hidden;
+    /* Ensures no scrollbars if the image 'pokes out' */
+}
+
+.featured-image img {
+    width: 100%;
+    height: 100%;
+    /* This is the key line: */
+    object-fit: cover;
+
+    /* This ensures the 'middle' of your vertical photo stays centered */
+    object-position: center;
+    border-radius: 4px;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Post Content Styling */
+.post-body h2 {
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: #444;
+    font-weight: 300;
+}
+
+blockquote {
+    border-left: 3px solid #c5a059;
+    /* Your brand gold color */
+    padding-left: 30px;
+    margin: 40px 0;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: #555;
+}
+
+/* Call to Action Box */
+.blog-cta {
+    background: #f9f7f2;
+    padding: 40px;
+    text-align: center;
+    margin-top: 60px;
+    border-radius: 8px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #c5a059;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: opacity 0.3s;
+}
