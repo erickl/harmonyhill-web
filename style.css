@@ -198,8 +198,40 @@ img {
     /* Smooth hover effect */
 }
 
+.sticky-button-left-2 {
+    /* Position */
+    position: fixed;
+    bottom: 5em;
+    /* Increase distance from the edge slightly */
+    left: 1.5em;
+    /* Increase distance from the edge slightly */
+    z-index: 1000;
+
+    /* width:  1rem; */
+    height: 3.4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+
+    /* Shape & Appearance */
+    background-color: rgba(17, 72, 47, 0.9);
+    padding: 0.75em 0.75em 0.75em 0.75em;
+    /*Generous padding for a larger touch area */
+    border-radius: 50px;
+    /* High radius creates the pill shape */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Soft shadow makes it pop off the page */
+    transition: transform 0.2s ease-in-out;
+    /* Smooth hover effect */
+}
+
 .sticky-button,
 .sticky-button-left,
+.sticky-button-left-2,
+.sticky-button-left-2 a,
+.sticky-button-left-2 p,
 .sticky-button a,
 .sticky-button p,
 .sticky-button-left a,
