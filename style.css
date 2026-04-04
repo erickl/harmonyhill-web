@@ -258,6 +258,35 @@ img {
     /* Larger shadow on hover */
 }
 
+@media (max-width: 768px) {
+    .sticky-button-left {
+        bottom: 1.5em;
+        /* Move it closer to bottom on mobile */
+        left: 1em;
+        /* Move it closer to edge on mobile */
+        height: 2.5rem;
+        /* Smaller height */
+        padding: 0.5em 1em;
+    }
+
+    .sticky-button-left-2 {
+        bottom: 4em;
+        /* Move it closer to bottom on mobile */
+        left: 1em;
+        /* Move it closer to edge on mobile */
+        height: 2.5rem;
+        padding: 0.5em 1em;
+    }
+
+    /* 2. ADJUST THE TEXT (This is the missing piece) */
+    .sticky-button-left a,
+    .sticky-button-left p,
+    .sticky-button-left-2 a,
+    .sticky-button-left-2 p {
+        font-size: 0.75rem;
+    }
+}
+
 video::-webkit-controls-panel,
 video::-moz-controls-panel,
 video:-ms-controls-panel {
